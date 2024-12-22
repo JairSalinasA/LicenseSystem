@@ -1,0 +1,43 @@
+LicenseSystem/
+│
+├── LicenseSystem.UI/                    
+│   ├── Forms/
+│   │   ├── MainForm.cs
+│   │   ├── LicenseManagementForm.cs
+│   │   └── CustomerManagementForm.cs
+│   └── Program.cs
+│
+├── LicenseSystem.Domain/                
+│   ├── Entities/                        # Clases POCO
+│   │   ├── License.cs
+│   │   ├── Customer.cs
+│   │   ├── Product.cs
+│   │   └── LicenseType.cs
+│   ├── Interfaces/                      # Interfaces para Data Access
+│   │   ├── ILicenseDAO.cs
+│   │   ├── ICustomerDAO.cs
+│   │   └── IProductDAO.cs
+│   └── BusinessLogic/                   # Lógica de negocio
+│       ├── LicenseManager.cs
+│       └── ValidationManager.cs
+│
+├── LicenseSystem.DataAccess/            # Capa de Acceso a Datos con ADO.NET
+│   ├── Connection/
+│   │   ├── ConnectionString.cs          # Gestión de conexión
+│   │   └── DatabaseConnection.cs        # Factoría de conexiones
+│   ├── DAOs/                           # Implementación ADO.NET
+│   │   ├── BaseDAO.cs                  # Clase base con métodos comunes ADO.NET
+│   │   ├── LicenseDAO.cs
+│   │   ├── CustomerDAO.cs
+│   │   └── ProductDAO.cs
+│   └── Helpers/
+│       ├── DataReaderHelper.cs         # Extensiones para SqlDataReader
+│       └── ParameterHelper.cs          # Ayudante para SqlParameters
+│
+└── LicenseSystem.Common/                # Utilidades compartidas
+    ├── Exceptions/
+    │   └── DatabaseException.cs
+    ├── Extensions/
+    │   └── DataRowExtensions.cs
+    └── Constants/
+        └── StoredProcedures.cs         # Nombres de SPs como constantes
