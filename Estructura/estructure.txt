@@ -1,0 +1,39 @@
+LicenceManager/
+│
+├── **LicenceManager.sln**                 // Solución de Visual Studio
+│
+├── **LicenceManager.Domain/**             // Capa de Dominio (DDD)
+│   ├── Entities/                          // Entidades del dominio
+│   ├── ValueObjects/                      // Objetos de valor
+│   ├── Repositories/                      // Interfaces de repositorios
+│   ├── Services/                          // Lógica de negocio
+│   ├── Specifications/                    // Especificaciones del dominio
+│   └── Exceptions/                        // Excepciones personalizadas
+│
+├── **LicenceManager.Data/**               // Capa de Acceso a Datos (ADO.NET)
+│   ├── Repositories/                      // Implementaciones de repositorios
+│   ├── Models/                            // Modelos de datos (DTOs o entidades para ADO.NET)
+│   ├── Database/                          // Scripts de base de datos y conexiones
+│   └── Helpers/                           // Utilidades para ADO.NET
+│
+├── **LicenceManager.Application/**        // Capa de Aplicación
+│   ├── DTOs/                              // Objetos de transferencia de datos (DTOs)
+│   ├── Services/                          // Servicios de aplicación
+│   ├── Validators/                        // Validaciones de datos (FluentValidation)
+│   └── Mappings/                          // Mapeos (AutoMapper)
+│
+├── **LicenceManager.Presentation/**       // Capa de Presentación (Windows Forms)
+│   ├── Forms/                             // Formularios de la aplicación
+│   ├── Controls/                          // Controles personalizados
+│   ├── Resources/                         // Recursos (imágenes, iconos, etc.)
+│   └── Helpers/                           // Utilidades para la interfaz de usuario
+│
+├── **LicenceManager.Tests/**              // Pruebas unitarias y de integración
+│   ├── UnitTests/                         // Pruebas unitarias
+│   └── IntegrationTests/                  // Pruebas de integración
+│
+└── **LicenceManager.Common/**             // Utilidades comunes
+    ├── Extensions/                        // Métodos de extensión
+    ├── Constants/                         // Constantes globales
+    ├── Helpers/                           // Utilidades generales
+    └── Logging/                           // Configuración de logging (Serilog, NLog, etc.)
